@@ -148,12 +148,12 @@ def main():
     # Developement report
     Xdv_best = best_vec.transform(X_dev)
     ydv_pred = best_clf.predict(Xdv_best)
-    eval_and_print(y_dev, ydv_pred, "Manual Vectorizer - DEV Performance")
+    eval_and_print(y_dev, ydv_pred, "My Vectorizer - Development set Performance")
 
     #Test report 
     Xte_best = best_vec.transform(X_test)
     yte_pred = best_clf.predict(Xte_best)
-    eval_and_print(y_test, yte_pred, "Manual Vectorizer - TEST Performance")
+    eval_and_print(y_test, yte_pred, "My Vectorizer - Test set Performance")
 
     manual_test_acc = accuracy_score(y_test, yte_pred)
 
