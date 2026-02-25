@@ -209,8 +209,6 @@ def main():
     print("\n=== Comparison Summary ===")
     print(f"Manual vectorizer Test set accuracy : {manual_test_acc:.4f}")
     print(f"sklearn vectorizer Test set accuracy: {sk_test_acc:.4f}")
-    print("Done.")
-
 
 if __name__ == "__main__":
     main()
